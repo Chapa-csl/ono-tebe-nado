@@ -148,15 +148,7 @@
 	letter-spacing: normal;
 }
 
-.aligned-text {
-	display: block;
-}
-
 .aligned-text_center {
-	display: block;
-}
-
-.aligned-text_right {
 	display: block;
 }
 
@@ -336,7 +328,6 @@
 .footer__menu-link {
 	font-weight: 400;
 	font-size: 18px;
-	line-height: normal;
 	line-height: normal;
 	text-underline-offset: 2px;
 }
