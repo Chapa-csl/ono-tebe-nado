@@ -45,11 +45,13 @@
 .header__link {
 	text-decoration: none;
 	white-space: nowrap;
+	text-decoration: underline;
+	text-underline-offset: 4px;
 }
 
 .header__link_active {
-	text-decoration: underline;
-	text-underline-offset: 4px;
+	text-decoration: none;
+	white-space: nowrap;
 }
 
 .header__logo {
@@ -167,12 +169,14 @@
 }
 
 .lots__heading {
-	font-family: "Raleway";
+	font-family: "Raleway", sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 40px;
-	line-height: 76px;
+	line-height: normal;
 	text-transform: uppercase;
+	margin-bottom: 27px;
+	margin-left: 39px;
 }
 .card {
 	position: relative;
@@ -217,6 +221,7 @@
 
 .lots__card-list {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 25px;
 	list-style: none;
 	width: 100%;
@@ -230,7 +235,7 @@
 
 .lots__look-more-link {
 	margin-left: 38px;
-	font-family: "Raleway";
+	font-family: "Raleway", sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -241,7 +246,7 @@
 }
 
 .card__title {
-	font-family: "Raleway";
+	font-family: "Raleway", sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 22px;
@@ -254,7 +259,7 @@
 }
 
 .card__text {
-	font-family: "Raleway";
+	font-family: "Raleway", sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -271,7 +276,7 @@
 	display: grid;
 	grid-template-columns: min-content 1fr;
 	column-gap: 51px;
-	padding: 130px 50px 90px 50px;
+	padding: 132px 26px 90px 50px;
 }
 .about__logo {
 	display: flex;
@@ -299,7 +304,7 @@
 }
 
 .about__text {
-	font-family: "Raleway";
+	font-family: "Raleway", sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -308,11 +313,15 @@
 	margin-bottom: 26px;
 }
 
+.about__text:last-child {
+	margin-bottom: 0;
+}
+
 /* ============================FOOTER========================================== */
 
 .footer {
 	display: flex;
-	padding: 66px 52px;
+	padding: 90px 52px;
 	gap: 185px;
 }
 
@@ -322,7 +331,7 @@
 }
 
 .footer__menu-link_active {
-	font-family: Raleway;
+	font-family: "Raleway", sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 21px;
